@@ -1,154 +1,156 @@
 <!DOCTYPE HTML>
 <html lang="en-AU">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Land Surveyor Qualifications and Courses</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            background-color: #fff;
-        }
+            body {
+                font-family: Arial, sans-serif;
+                margin: 20px;
+                background-color: #fff;
+            }
 
-        .container {
-            display: flex;
-            justify-content: flex-start;
-        }
+            .container {
+                display: flex;
+                justify-content: flex-start;
+            }
 
-        .left-column {
-            width: 700px;
-            margin-right: 60px;
-            margin-left: 50px;
-        }
+            .left-column {
+                width: 700px;
+                margin-right: 60px;
+                margin-left: 50px;
+            }
 
-        .search-box {
-            width: 100%;
-            text-align: left;
-            margin-bottom: 30px;
-            display: flex;
-            align-items: center;
-        }
+            .search-box {
+                width: 100%;
+                text-align: left;
+                margin-bottom: 30px;
+                display: flex;
+                align-items: center;
+            }
 
-        input[type="text"] {
-            flex: 1;
-            padding: 10px;
-            font-size: 16px;
-            border: 1px solid #ccc;
-            border-radius: 24px 0 0 24px;
-            border-right: none;
-        }
+            input[type="text"] {
+                flex: 1;
+                padding: 10px;
+                font-size: 16px;
+                border: 1px solid #ccc;
+                border-radius: 24px 0 0 24px;
+                border-right: none;
+            }
 
-        .search-button {
-            padding: 10px 20px;
-            background-color: #1a73e8;
-            color: white;
-            font-size: 16px;
-            border: 1px solid #1a73e8;
-            border-radius: 0 24px 24px 0;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
+            .search-button {
+                padding: 10px 20px;
+                background-color: #1a73e8;
+                color: white;
+                font-size: 16px;
+                border: 1px solid #1a73e8;
+                border-radius: 0 24px 24px 0;
+                cursor: pointer;
+                transition: background-color 0.3s;
+            }
 
-        .search-button:hover {
-            background-color: #0d65d9;
-        }
+            .search-button:hover {
+                background-color: #0d65d9;
+            }
 
-        .ai-overview {
-            padding: 20px;
-            background-color: #f8f9fa;
-            border: 1px solid #e0e0e0;
-            border-radius: 8px;
-            margin-bottom: 40px;
-        }
+            .ai-overview {
+                padding: 20px;
+                background-color: #f8f9fa;
+                border: 1px solid #e0e0e0;
+                border-radius: 8px;
+                margin-bottom: 40px;
+            }
 
-        .ai-overview-header {
-            display: flex;
-            align-items: center;
-            margin-bottom: 15px;
-        }
+            .ai-overview-header {
+                display: flex;
+                align-items: center;
+                margin-bottom: 15px;
+            }
 
-        .ai-overview-icon {
-            color: #4285f4;
-            margin-right: 10px;
-            font-size: 24px;
-        }
+            .ai-overview-icon {
+                color: #4285f4;
+                margin-right: 10px;
+                font-size: 24px;
+            }
 
-        .ai-overview h2 {
-            margin: 0;
-            font-size: 20px;
-            font-weight: 500;
-            color: #202124;
-        }
+            .ai-overview h2 {
+                margin: 0;
+                font-size: 20px;
+                font-weight: 500;
+                color: #202124;
+            }
 
-        .ai-overview ul {
-            padding-left: 20px;
-            margin-top: 15px;
-            margin-bottom: 15px;
-        }
+            .ai-overview ul {
+                padding-left: 20px;
+                margin-top: 15px;
+                margin-bottom: 15px;
+            }
 
-        .ai-overview li {
-            margin-bottom: 10px;
-            position: relative;
-        }
+            .ai-overview li {
+                margin-bottom: 10px;
+                position: relative;
+            }
 
-        .course-heading {
-            font-size: 18px;
-            font-weight: 500;
-            color: #202124;
-            margin-top: 20px;
-            margin-bottom: 8px;
-        }
+            .course-heading {
+                font-size: 18px;
+                font-weight: 500;
+                color: #202124;
+                margin-top: 20px;
+                margin-bottom: 8px;
+            }
 
-        .course-description {
-            color: #4d5156;
-            margin-bottom: 5px;
-        }
+            .course-description {
+                color: #4d5156;
+                margin-bottom: 5px;
+            }
 
-        .link-icon {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            width: 20px;
-            height: 20px;
-            background-color: #f1f3f4;
-            border-radius: 50%;
-            margin-left: 6px;
-            text-decoration: none;
-        }
+            .link-icon {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                width: 20px;
+                height: 20px;
+                background-color: #f1f3f4;
+                border-radius: 50%;
+                margin-left: 6px;
+                text-decoration: none;
+            }
 
-        .link-icon svg {
-            width: 12px;
-            height: 12px;
-            fill: #5f6368;
-        }
+            .link-icon svg {
+                width: 12px;
+                height: 12px;
+                fill: #5f6368;
+            }
 
-        .result {
-            margin-bottom: 25px;
-        }
+            .result {
+                margin-bottom: 25px;
+            }
 
-        .result a {
-            color: #1a0dab;
-            font-size: 18px;
-            text-decoration: none;
-        }
+            .result a {
+                color: #1a0dab;
+                font-size: 18px;
+                text-decoration: none;
+            }
 
-        .result a:hover {
-            text-decoration: underline;
-        }
+            .result a:hover {
+                text-decoration: underline;
+            }
 
-        .result p {
-            color: #545454;
-            font-size: 14px;
-            margin-top: 4px;
-        }
-    </style>
+            .result p {
+                color: #545454;
+                font-size: 14px;
+                margin-top: 4px;
+            }
+        </style>
 </head>
+
 <body>
     <div class="container">
         <div class="left-column">
             <div class="search-box">
-                <input type="text" placeholder="Search land surveyor qualifications and courses...">
+                <input type="text" placeholder="Search land surveyor qualifications and courses..." />
                 <button class="search-button">Search</button>
             </div>
 
@@ -156,13 +158,17 @@
                 <h2>AI Overview</h2>
                 <p>To become a land surveyor in Australia, you typically need:</p>
                 <ul>
-                    <li>A bachelor's degree in surveying, geomatics, or a related field</li>
-                    <li>Additional training such as a Certificate IV, Diploma, or Associate Degree in Surveying to build technical skills</li>
+                    <li>A bachelor’s degree in surveying, geomatics, or a related field</li>
+                    <li>Additional training such as a Certificate IV, Diploma, or Associate Degree in Surveying to build technical
+                        skills</li>
                     <li>Practical experience and passing board examinations for registration as a licensed surveyor</li>
                 </ul>
                 <p>
-                    You can <a href="https://www.browserstack.com/guide/show-page-source#:~:text=Right%2Dclick%20anywhere%20on%20the,to%20open%20Chrome%20Developer%20Tools." target="_blank">view page source in Chrome</a> to understand how these elements are structured.
+                    You can <a
+                        href="https://www.browserstack.com/guide/show-page-source#:~:text=Right%2Dclick%20anywhere%20on%20the,to%20open%20Chrome%20Developer%20Tools."
+                        target="_blank">view page source in Chrome</a> to understand how these elements are structured.
                 </p>
+
             </div>
 
             <div class="results">
@@ -171,8 +177,11 @@
                     <p>A 12-month course covering field operations, report writing, and surveying equipment.</p>
                 </div>
                 <div class="result">
-                    <a href="https://www.rmit.edu.au/study-with-us/levels-of-study/vocational-study/diplomas/diploma-of-surveying-c5416">Diploma of Surveying - RMIT University</a>
-                    <p>Enhance practical skills, learn to design engineering structures, and carry out surveying calculations.</p>
+                    <a
+                        href="https://www.rmit.edu.au/study-with-us/levels-of-study/vocational-study/diplomas/diploma-of-surveying-c5416">Diploma
+                        of Surveying - RMIT University</a>
+                    <p>Enhance practical skills, learn to design engineering structures, and carry out surveying
+                        calculations.</p>
                 </div>
                 <div class="result">
                     <a href="#">Associate Degree of Surveying</a>
@@ -246,8 +255,17 @@
                     <a href="#">Bachelor of Surveying (Honours)</a>
                     <p>Comprehensive four-year program covering all areas of land and spatial surveying.</p>
                 </div>
+                <div class="result">
+                    <a href="#">Where to Study Surveying in VIC</a>
+                    <p>Comparison of institutions and course durations for Victorian surveying students.</p>
+                </div>
+                <div class="result">
+                    <a href="#">Bachelor of Surveying (Honours)</a>
+                    <p>Comprehensive four-year program covering all areas of land and spatial surveying.</p>
+                </div>
             </div>
         </div>
     </div>
 </body>
+
 </html>
