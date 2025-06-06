@@ -68,7 +68,7 @@
 
         .ai-overview h2 {
             margin: 0;
-            font-size: 10px;
+            font-size: 15px;
             font-weight: 500;
             color: #202124;
         }
@@ -120,9 +120,13 @@
         }
 
         .result a {
-            color: #1a0dab;
+            color: #1a0dab; /* Google blue for unvisited links */
             font-size: 18px;
             text-decoration: none;
+        }
+
+        .result a:visited {
+            color: #681da8; /* Google purple for visited links */
         }
 
         .result a:hover {
@@ -133,6 +137,64 @@
             color: #545454;
             font-size: 14px;
             margin-top: 4px;
+        }
+
+        /* Add these new styles */
+        .search-result {
+            margin-bottom: 25px;
+        }
+        
+        .result-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 4px;
+        }
+        
+        .site-icon {
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            margin-right: 10px;
+            background-color: #e03c31; /* RMIT red */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+        
+        .site-info {
+            flex-grow: 1;
+        }
+        
+        .site-name {
+            font-size: 14px;
+            color: #202124;
+            font-weight: normal;
+            line-height: 1.3;
+        }
+        
+        .site-url {
+            font-size: 12px;
+            color: #5f6368;
+            line-height: 1.3;
+        }
+        
+        .result-title {
+            font-size: 20px;
+            font-weight: normal;
+            color: #8024a0; /* Purple color */
+            margin: 0 0 5px 0;
+        }
+        
+        .more-options {
+            color: #5f6368;
+            font-size: 18px;
+            cursor: pointer;
+        }
+        
+        /* Highlight keywords in text */
+        .keyword {
+            font-weight: bold;
         }
     </style>
 </head>
@@ -159,12 +221,37 @@
 
             <div class="results">
                 <div class="result">
-                    <a href="#">Certificate IV in Surveying - RMIT University</a>
-                    <p>A 12-month course covering field operations, report writing, and surveying equipment.</p>
+                    <a href="#">Diploma of Surve1ing - CPP50121</a>
+                    <p>In the Diploma of Surveying, you'll extend your knowledge with increased practice and
+                    engagement with digital technologies and surveying tools that map and display information fr…</p>
                 </div>
-                <div class="result">
-                    <a href="https://www.rmit.edu.au/study-with-us/levels-of-study/vocational-study/diplomas/diploma-of-surveying-c5416">Diploma of Surveying - RMIT University</a>
-                    <p>Enhance practical skills, learn to design engineering structures, and carry out surveying calculations.</p>
+                <div class="search-result">
+                    <div class="result-header">
+                        <div class="site-icon">
+                            <span style="color: white; font-weight: bold;">R</span>
+                        </div>
+                        <div class="site-info">
+                            <div class="site-name">RMIT University</div>
+                            <div class="site-url">https://www.rmit.edu.au › vocational-study › diplomas</div>
+                        </div>
+                        <div class="more-options">⋮</div>
+                    </div>
+                    <h3 class="result-title">Diploma of Surveying - CPP50121</h3>
+                    <p>In the Diploma of <span class="keyword">Surveying</span>, you'll extend your knowledge with increased practice and engagement with digital technologies and <span class="keyword">surveying</span> tools that map and display information fr...</p>
+                </div>
+                <div class="search-result">
+                    <div class="result-header">
+                        <div class="site-icon">
+                            <span style="color: white; font-weight: bold;">R</span>
+                        </div>
+                        <div class="site-info">
+                            <div class="site-name">RMIT University</div>
+                            <div class="site-url">https://www.rmit.edu.au › vocational-study › diplomas</div>
+                        </div>
+                        <div class="more-options">⋮</div>
+                    </div>
+                    <h3 class="result-title">Diploma of Surveying - CPP50121</h3>
+                    <p>In the Diploma of <span class="keyword">Surveying</span>, you'll extend your knowledge with increased practice and engagement with digital technologies and <span class="keyword">surveying</span> tools that map and display information fr...</p>
                 </div>
                 <div class="result">
                     <a href="#">Associate Degree of Surveying</a>
