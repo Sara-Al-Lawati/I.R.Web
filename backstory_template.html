@@ -134,9 +134,10 @@
         }
 
         .result p {
-            color: #545454;
-            font-size: 14px;
-            margin-top: 4px;
+            font-size: 13px; /* Slightly smaller font */
+            color: #4d5156; /* Google's standard gray for descriptions */
+            margin-top: 3px;
+            line-height: 1.4;
         }
 
         /* Add these new styles */
@@ -195,6 +196,39 @@
         .keyword {
             font-weight: bold;
         }
+
+        /* Add this to your CSS styles */
+        .result-link {
+            display: block;
+            color: inherit;
+            text-decoration: none;
+            padding: 8px;
+            border-radius: 8px;
+            margin: -8px;
+        }
+
+        .result-link:hover {
+            background-color: #f5f5f5;
+            text-decoration: none;
+        }
+
+        .result-link .result-title {
+            color: #1a0dab; /* Keep the title link color */
+        }
+
+        .result-link:visited .result-title {
+            color: #681da8; /* Change the title color after the link is visited */
+        }
+
+        .result-link:hover .result-title {
+            text-decoration: underline;
+        }
+
+        /* Ensure the more options button stays clickable */
+        .more-options {
+            position: relative;
+            z-index: 2;
+        }
     </style>
 </head>
 <body>
@@ -225,32 +259,20 @@
                     engagement with digital technologies and surveying tools that map and display information fr…</p>
                 </div>
                 <div class="search-result">
-                    <div class="result-header">
-                        <div class="site-icon">
-                            <img src="path/to/site-logo.png" alt="Site Name" style="width: 100%; height: 100%; object-fit: cover;">
+                    <a href="https://www.rmit.edu.au/study-with-us/levels-of-study/vocational-study/diplomas/diploma-of-surveying-c5416" class="result-link">
+                        <div class="result-header">
+                            <div class="site-icon">
+                                <img src="path/to/site-logo.png" alt="Site Name" style="width: 100%; height: 100%; object-fit: cover;">
+                            </div>
+                            <div class="site-info">
+                                <div class="site-name">RMIT University</div>
+                                <div class="site-url">https://www.rmit.edu.au › vocational-study › diplomas</div>
+                            </div>
+                            <div class="more-options">⋮</div>
                         </div>
-                        <div class="site-info">
-                            <div class="site-name">RMIT University</div>
-                            <div class="site-url">https://www.rmit.edu.au › vocational-study › diplomas</div>
-                        </div>
-                        <div class="more-options">⋮</div>
-                    </div>
-                    <h3 class="result-title">Diploma of Surveying - CPP50121</h3>
-                    <p>In the Diploma of <span class="keyword">Surveying</span>, you'll extend your knowledge with increased practice and engagement with digital technologies and <span class="keyword">surveying</span> tools that map and display information fr...</p>
-                </div>
-                <div class="search-result">
-                    <div class="result-header">
-                        <div class="site-icon">
-                            <img src="path/to/site-logo.png" alt="Site Name" style="width: 100%; height: 100%; object-fit: cover;">
-                        </div>
-                        <div class="site-info">
-                            <div class="site-name">RMIT University</div>
-                            <div class="site-url">https://www.rmit.edu.au › vocational-study › diplomas</div>
-                        </div>
-                        <div class="more-options">⋮</div>
-                    </div>
-                    <h3 class="result-title">Diploma of Surveying - CPP50121</h3>
-                    <p>In the Diploma of <span class="keyword">Surveying</span>, you'll extend your knowledge with increased practice and engagement with digital technologies and <span class="keyword">surveying</span> tools that map and display information fr...</p>
+                        <h3 class="result-title">Diploma of Surveying - CPP50121</h3>
+                        <p>In the Diploma of <span class="keyword">Surveying</span>, you'll extend your knowledge with increased practice and engagement with digital technologies and <span class="keyword">surveying</span> tools that map and display information fr...</p>
+                    </a>
                 </div>
                 <div class="result">
                     <a href="#">Associate Degree of Surveying</a>
