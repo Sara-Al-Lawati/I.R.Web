@@ -209,6 +209,7 @@
 
         .result-link:hover {
             text-decoration: none;
+            background-color: transparent; /* Ensure no background change on hover */
         }
 
         .result-link .result-title {
@@ -223,14 +224,19 @@
             text-decoration: underline;
         }
 
+        /* Add this to prevent hover effects on paragraphs */
         .result-link:hover p {
             text-decoration: none;
+            color: #4d5156; /* Keep the original color */
+            background-color: transparent;
+            cursor: default;
         }
 
-        /* Ensure the more options button stays clickable */
-        .more-options {
-            position: relative;
-            z-index: 2;
+        /* Remove any potential hover effects on keywords within paragraphs */
+        .result-link:hover .keyword {
+            font-weight: bold;
+            color: inherit;
+            background-color: transparent;
         }
     </style>
 </head>
