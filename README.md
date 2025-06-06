@@ -11,4 +11,4 @@ All backstories featured on this website are adapted from materials provided in 
 
 > Peter Bailey, Alistair Moffat, Falk Scholer, and Paul Thomas. 2016. UQV100: A Test Collection with Query Variability. In Proceedings of the 39th International ACM SIGIR conference on Research and Development in Information Retrieval (SIGIR '16). Association for Computing Machinery, New York, NY, USA, 725–728. https://doi.org/10.1145/2911451.2914671
 
-This website may include visual or structural elements inspired by public search interfaces, including those by Google. These are referenced for research and illustrative purposes only, without any affiliation or endorsement by any publich search interfaces.
+This website may include visual or structural elements inspired by commonly used public search interfaces, without any affiliation or endorsement from the creators of those interfaces. These are referenced for research and illustrative purposes only.
